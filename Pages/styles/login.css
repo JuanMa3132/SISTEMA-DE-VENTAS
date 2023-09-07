@@ -1,0 +1,122 @@
+body {
+    padding: 10px;
+    background-color: #3b3b3b;
+    color: rgba(0, 0, 0, 0.767);
+    font-family: sans-serif;
+    background: linear-gradient(45deg, rgba(27,100,255,1), rgba(60,209,52,1), rgba(66,222,63,1), rgba(136,70,249,1));
+    background-size: 400% 400%;
+    animation: cambiar 10s ease infinite;
+}
+
+.container {
+    display: flex;
+    padding: 5px;
+}
+@keyframes cambiar {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+.login {
+    position: relative;
+    backdrop-filter: blur(2px);
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 25em;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, 1%);
+}
+.phrase {
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.178);
+    position: relative;
+    width: 28em;
+    top: 20%;
+    height: 20em;
+    border-radius: 15px;
+    right: 0;
+    transform: translate( 30%, 10%);
+}
+.phrase p {
+    padding: 10px;
+}
+.phrase h2 {
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+.login h1 {
+    border-bottom: 1px solid #ffffff41;
+    box-shadow: #000000;
+    text-align: center;
+}
+.login form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .username {
+    position: relative;
+    color: #000000 ;
+}
+.username input {
+    color: white;
+    width: 100%;
+    padding: 0 0.313em;
+    margin: 10px 0;
+    height: 2.5em;
+    font-size: 16px;
+    border: 0.5px solid white;
+    border-radius: 1rem;
+    background: none;
+    outline: none;
+}
+.username input:focus {
+    border: 2px solid white;
+}
+.recordar {
+    margin: 1.5em 0;
+    text-align: center;
+}
+.recordar:hover {
+    cursor: pointer;
+    color: blue;
+}
+input[type="submit"]{
+    margin-top: 10px;
+    width: 12.5em;
+    height: 3em;
+    background-color: #ffffff;
+    position: relative;
+    transform: translate(45%, 10%);
+    border: 1px transparent;
+    border-radius: 1rem;
+}
+input[type="submit"]:hover {
+    background-color: beige;
+}
+
+input[value="Registrarse"] {
+    position: relative;
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;    
+    text-align: center;
+    font-size: 10px;
+    width: 20.5em; 
+    height: 3em; 
+    margin: 20px 0;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+}
+input[value="Registrarse"]:hover {
+    cursor: pointer;
+    color: rgb(30, 255, 0);
+    border-radius: 1rem;
+    width: 15.5em;
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
