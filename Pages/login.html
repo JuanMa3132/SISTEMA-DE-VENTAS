@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="/Pages/styles/login.css">
+    
+    <link rel="stylesheet" href="styles/login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion | Sistema de ventas</title>
@@ -9,23 +10,20 @@
 <body>
     <div class="container">
     <div class="login">
-        <h1>Iniciar Sesion</h1>
+        <H1>rakun<span style="color:#D14BCA">master</span></H1>
+        <h2>Iniciar Sesión</h2>
             <form action="login">
                 <div class="username">
-                <input type="text" required><label>Introduce tu usuario</label>
+                <input type="text" required placeholder="Email">
             </div>
             <div class="username">
-                <input type="password"  required><label>Introduce tu contraseña</label>
+                <input type="password" id="password" required placeholder="Contraseña"> 
+                <button id="show-hide-btn" type="button" onclick="togglePasswordVisibility()"><img id="eye-icon" src="Recursos/mostrar.png" alt="#"></button>
             </div>
-            <input type="submit" value="iniciar sesion">
+            <input type="submit" value="Iniciar">
                 <div class="recordar" href="#">¿Olvido su contraseña?</div>
-                <input type="button" href="#" value="Registrarse">
-            </form>
-    </div>
-    <div class="phrase">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ratione.</p>
     </div>
 </div>
+<script src="Js/login.js"></script>
 </body>
 </html>

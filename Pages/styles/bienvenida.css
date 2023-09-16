@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1C1B3A;
+    position: relative;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container nav h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container nav {
+    display: flex;
+    font-family: poppins;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 40px 40px 25px;
+    justify-content: space-between;
+    color: white;
+}
+
+.menu_link {
+    text-align: center;
+}
+
+.link_item {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.link {
+    padding: 10px;
+    position: relative;
+}
+
+.link::before {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #D14BCA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+    will-change: width;
+}
+
+.link:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.opciones {
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    gap: 30px;
+    position: relative;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.opciones a:hover {
+    font-family: 'Poppins' sans-serif;
+    color: #D14BCA;
+}
+
+.opciones a:hover {
+    transition: all 45deg 1s ease;
+}
+
+.container nav button {
+    font-family: 'poppins';
+    background-color: #D14BCA;
+    border: none;
+    outline: none;
+    width: 8em;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.container nav button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    color: white;
+    padding: 45px 0 2em 50px;
+}
+
+article p {
+    font-family: 'poppins';
+    font-size: 11.5px;
+}
+
+footer {
+    position: absolute;
+    height: 14.5vh;
+    font-family: poppins;
+    width: 100%;
+    bottom: 0;
+    text-decoration: none;
+    background-color: #06113B;
+    color: white;
+    box-shadow: 0 0 20px 0px black
+}
+
+.container-footer {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+footer a,footer p {
+    padding-top: 30px;
+    text-align: center;
+}
+
+footer a {
+    padding-left: 30px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+@media (min-width:370px) and (max-width:428px) {
+    article {
+        font-size: 20px;
+        padding: 30px;
+    }
+    article p {
+        font-size: 10px;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+    .container-footer {
+        padding: 5px;
+    }
+}
+@media (min-width:300px) and (max-width:325px){
+    body {
+        position: relative;
+        overflow: visible;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 100vw; /* Ancho máximo del 100% en resoluciones más pequeñas */
+      }
+      footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+      }
+      .container-footer {
+        padding-left: 0;
+        font-size: 10px;
+      }
+      .container nav h1 {
+        padding: 0;
+      }
+    .link {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+
+    }
+    .link_item {
+        padding: 15px;
+    }
+    .opciones {
+        display: flex;
+        flex-flow: column;
+        background-color: #1C1B3A;
+    }
+    .container nav button {
+        position: relative;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    article {
+        position: relative;
+        font-size: 20px;
+        padding: 15px;
+        width: 14em;
+        margin-bottom: 10px;
+    }
+    article p {
+        font-size: 10px;
+        width: 30em;
+        
+    }
+    
+    footer a,
+    footer p {
+        padding-top: 30px;
+        text-align: center;
+    }
+    
+    footer a {
+        padding-left: 30px;
+        text-align: center;
+    }
+    }
+    
