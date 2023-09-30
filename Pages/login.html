@@ -12,12 +12,12 @@
     <div class="login">
         <H1>rakun<span style="color:#D14BCA">master</span></H1>
         <h2>Iniciar Sesión</h2>
-            <form action="login">
+            <form id="login-form" action="javascript:redirect()">
                 <div class="username">
-                <input type="text" required placeholder="Email">
+                <input type="text" id="username" name="username" required placeholder="Email">
             </div>
             <div class="username">
-                <input type="password" id="password" required placeholder="Contraseña"> 
+                <input type="password" id="password" name="password" required placeholder="Contraseña"> 
                 <button id="show-hide-btn" type="button" onclick="togglePasswordVisibility()"><img id="eye-icon" src="Recursos/mostrar.png" alt="#"></button>
             </div>
             <input type="submit" value="Iniciar">
