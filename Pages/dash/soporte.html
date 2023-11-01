@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard admin main</title>
+
+        <!--Hojas de estilo-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Icons cdn-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--Script cdn-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    </head>
+
+    <style>
+           .background{
+            position: fixed;
+            margin-left: 250px;
+        }
+
+        .background img {
+            width: 110%;
+            opacity: 0.5;
+        }
+
+
+        .flexbox-container{
+            display: -ms-flexbox;
+            display: -webkit-flex;
+        }
+
+        .flexbox-container > div{
+            width: 50%;
+            padding: 10px;
+        }
+
+        .flexbox-container > div:first-child {
+            margin-right: 20px;
+        }
+
+
+        .flexbox-container1{
+            display: -ms-flexbox;
+            display: -webkit-flex;
+        }
+
+        .flexbox-container1 > div{
+            width: 60%;
+            padding: 10px;
+        }
+
+        .flexbox-container1 > div:first-child {
+            margin-right: 20px;
+        }
+
+
+
+        .titulo{
+            margin-left: 30%;
+            
+        }
+
+        .parrafo {
+            margin-top: 20px;
+            margin-left: 10%;
+            width: 600px;
+            height: 100px;
+            text-align: center;
+        }
+        
+
+
+
+           
+
+        </style>
+
+    <body>
+
+        <section id="menu">
+
+            <div class="logo">
+                <img
+                    src="imagenes/intento_2-transformed-removebg-preview (1).png"
+                    alt="Logo del software">
+                <h2>Admin<span>istrador</span></h2>
+            </div>
+
+            <div class="items"> <!-- Nav links and icons-->
+
+                <li><i class='bx bxs-dashboard'></i><a href="../Dashboard/index.html">
+                        Dashboard</a></li>
+                <li><i class="fa-solid fa-sack-dollar"></i> <a
+                        href="../interfaz ventas/Interfaz-ventas.html"> Ventas</a></li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i> <a href="#">
+                        Clientes</a></li>
+                <li><i class="fa-solid fa-boxes-stacked"></i> <a href="#">
+                        Inventario</a></li>
+                <li><i class="fa-solid fa-chart-line"></i><a href="#">
+                        Estadisticas</a></li>
+                <li><i class="fa-solid fa-truck"></i> <a href="proveedores.html">
+                        Proveedores</a></li>
+
+                <div class="settings">
+                    <!--Previously this code block was outside the "items" div, 
+            but it was problematic-->
+                    <li><i class='bx bxs-cog'></i>
+                        <a href="#"> Configuración</a></li>
+
+                </div>
+
+                <div class="support">
+                    <li><i class="fa-solid fa-envelope"></i>
+                        <a href="#"> Soporte</a></li>
+
+                </div> <!--Final closing div for settings and support-->
+
+            </div>
+
+            <footer>
+                <p class="tex-footer">© RakunMaster</p>
+            </footer>
+
+        </section>
+
+        <div class="background">
+
+            <img src="alegre-chica-negocios-rizada-gafas.jpg">
+        </div>
+
+        <section id="interface"
+            class
+            style="margin-top: 50px; margin-left: 300px;
+        
+        
+        ">
+
+            <div class="titulo">
+                <h2>Somos Common</h2>
+            </div>
+
+            <div class="parrafo">
+                <p>En Common Ms estamos deseando colaborar cotnigo. Puedes
+                    encontrarnos en cualquiera de nuestras oficinas o si lo
+                    prefieres envianos
+                    un email y contactaremos contigo lo antes posible
+                </p>
+            </div>
+
+            <div class="redes flexbox-container">
+
+                <div>
+                    <img src="imagenes/whatsapp-icon.jpg" width="50px" height="50px">
+                </div>
+
+                <div>
+                    <img src="imagenes/facebook-icon.jpg" width="50px" height="50px">
+
+                </div>
+
+                <div>
+                    <img src="imagenes/instagram-icon.jpg" width="50px"
+                    height="50px">
+                </div>
+
+                <div>
+                    <img src="imagenes/youtube-icon.jpg" width="50px" height="50px">
+
+                </div>
+
+
+            </div>
+
+            <div class="flexbox-container" style="margin-left: 30%; margin-bottom: 20px;">
+                <div>
+                    <p>Menu para crear Soporte</p>
+
+                    <form>
+                        <br>
+
+                        <div>
+                            <label>Nombres</label>
+                            <input type="text">
+                        </div>
+                        <br>
+
+                        <div>
+
+                            <label>Apellidos</label>
+                            <input type="text">
+
+                        </div>
+                        <br>
+
+                        <div>
+                            <label>Telefono</label>
+                            <input type="text">
+                        </div>
+
+                        <br>
+
+                        <div>
+
+                            <label>Direcion</label>
+                            <input type="text">
+
+                        </div>
+
+                        <br>
+                        <div>
+
+                            <button type="button">Crear Soporte</button>
+                        </div>
+
+                    </form> </div>
+
+
+            </div>
+
+            <div class="flexbox-container">
+                <div>
+
+                  <h2>SOPORTE TECNICO</h2>
+                  <p class="">Brindamos un servicio de soporte técnico completo para abordar cualquier problema que puedas enfrentar con tus sistemas y tecnologías.
+                    Nuestro equipo altamente capacitado está disponible para responder preguntas, resolver problemas técnicos, realizar diagnósticos y brindar orientación en tiempo real.
+                    Ya sea que se trate de problemas de hardware, software, redes o cualquier otra área de soporte tecnológico, estamos aquí para ayudarte</p>
+    
+                </div>
+
+                <div>
+
+                    <img src="logo-1.png" width="200px" height="200px">
+                </div>
+
+            </div>
+
+            <div class="flexbox-container" style="margin-top: 20px;">
+                <div>
+                    <img src="logo-1.png" width="200px" height="200px" style="margin-left: 100px;">
+
+                
+                </div>
+
+                <div>
+                    <h2>Mantenimiento preventivo</h2>
+                    <p class="">Brindamos un servicio de soporte técnico completo para abordar cualquier problema que puedas enfrentar con tus sistemas y tecnologías.
+                      Nuestro equipo altamente capacitado está disponible para responder preguntas, resolver problemas técnicos, realizar diagnósticos y brindar orientación en tiempo real.
+                      Ya sea que se trate de problemas de hardware, software, redes o cualquier otra área de soporte tecnológico, estamos aquí para ayudarte</p>
+      
+                </div>
+
+            </div>
+
+            <div class="flexbox-container" style="margin-top: 20px;">
+                <div>
+
+                  <h2>Mantenimiento correctivo</h2>
+                  <p class="">Reparamos cualquier averia o daño que pueda afectar al funcionamiento normal de tus sistemas, realizamos reapraciones sustituciones, restauraciones,
+                    recuperaciones y otras acciones correctivas para solucionar cualquier problema tecnico que pueda surgir. Nuestro equipo cuenta 
+                    con los recursos, herramientas y conocimientos necesarios para realizar un servicio rapido, eficaz y profesional
+                  </p>
+    
+                </div>
+
+                <div>
+
+                    <img src="logo-1.png" width="200px" height="200px">
+                </div>
+
+            </div>
+
+
+            
+
+        </section>
+
+        <div style="position: Fixed; top: 90%; left: 20%;">
+
+
+        </div>
+
+        <div style="position: Fixed; top: 90%; left: 40%;">
+
+
+        </div>
+
+        <div style="position: Fixed; top: 90%; left: 60%;">
+
+      
+
+        </div>
+
+        <div style="position: Fixed; top: 90%; left: 80%;">
+
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

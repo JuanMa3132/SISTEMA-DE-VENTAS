@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard admin main</title>
+
+        <!--Hojas de estilo-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Icons cdn-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--Script cdn-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    </head>
+
+    <style>
+           .background{
+            position: fixed;
+            margin-left: 250px;
+        }
+
+        .background img {
+            width: 110%;
+            opacity: 0.5;
+        }
+
+
+
+           
+
+        </style>
+
+    <body>
+
+        <section id="menu">
+
+           
+
+            <div class="logo">
+                <img
+                    src="imagenes/intento_2-transformed-removebg-preview (1).png"
+                    alt="Logo del software">
+                <h2>Admin<span>istrador</span></h2>
+            </div>
+
+            <div class="items"> <!-- Nav links and icons-->
+
+                <li><i class='bx bxs-dashboard'></i><a href="../Dashboard/index.html">
+                        Dashboard</a></li>
+                <li><i class="fa-solid fa-sack-dollar"></i> <a
+                        href="../interfaz ventas/Interfaz-ventas.html"> Ventas</a></li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i> <a href="#">
+                        Clientes</a></li>
+                <li><i class="fa-solid fa-boxes-stacked"></i> <a href="#">
+                        Inventario</a></li>
+                <li><i class="fa-solid fa-chart-line"></i><a href="#">
+                        Estadisticas</a></li>
+                <li><i class="fa-solid fa-truck"></i> <a href="proveedores.html">
+                        Proveedores</a></li>
+
+                <div class="settings">
+                    <!--Previously this code block was outside the "items" div, 
+            but it was problematic-->
+                    <li><i class='bx bxs-cog'></i>
+                        <a href="#"> Configuración</a></li>
+
+                </div>
+
+                <div class="support">
+                    <li>
+                        <a href="soporte.html"><i class="fa-solid fa-envelope"></i>
+                            Soporte</a></li>
+
+                </div> <!--Final closing div for settings and support-->
+
+            </div>
+
+            <footer>
+                <p class="tex-footer">© RakunMaster</p>
+            </footer>
+
+        </section>
+
+        <div class="background">
+
+            <img src="imagenes/proveedores.jpg">
+        </div>
+
+        <section id="interface"
+            class
+            style="margin-top: 50px; margin-left: 300px;
+        
+        
+        ">
+            <h2>Proveedores</h2>
+
+            <p>Menu para crear proveedores</p>
+
+            <form>
+                <br>
+
+                <div>
+                    <label>Nombres</label>
+                    <input type="text">
+                </div>
+                <br>
+
+                <div>
+
+                    <label>Apellidos</label>
+                    <input type="text">
+
+                </div>
+                <br>
+
+                <div>
+                    <label>Telefono</label>
+                    <input type="text">
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label>Direcion</label>
+                    <input type="text">
+
+                </div>
+
+                <br>
+                <div>
+
+                    <button type="button">Crear proveedor</button>
+                </div>
+
+            </form>
+
+            <div style="top: 5%; position: absolute; left: 50%;">
+                <h2 style="margin-left: 80px;">Administrador Sistema</h2>
+
+                <br>
+                <img src="logo-1.png" width="200px" height="200px"
+                    style="margin-left: 100px;">
+
+                <p>En este apartado podras ver los proveedores que estan en el
+                    sistema</p>
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+
+        <div style="position: Fixed; top: 90%; left: 20%;">
+
+            <img src="imagenes/whatsapp-icon.jpg" width="50px" height="50px">
+
+        </div>
+
+        <div style="position: Fixed; top: 90%; left: 40%;">
+
+            <img src="imagenes/facebook-icon.jpg" width="50px" height="50px">
+
+        </div>
+
+        <div style="position: Fixed; top: 90%; left: 60%;">
+
+            <img src="imagenes/instagram-icon.jpg" width="50px" height="50px">
+
+        </div>
+
+        <div style="position: Fixed; top: 90%; left: 80%;">
+
+            <img src="imagenes/youtube-icon.jpg" width="50px" height="50px">
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
