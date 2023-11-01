@@ -67,15 +67,7 @@
         }
 
 
-
-        .titulo{
-            margin-left: 30%;
-            
-        }
-
         .parrafo {
-            margin-top: 20px;
-            margin-left: 10%;
             width: 600px;
             height: 100px;
             text-align: center;
@@ -89,7 +81,11 @@
         </style>
 
     <body>
-
+        <div class="ham">
+            <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+                </svg>
+        </div>
         <section id="menu">
 
             <div class="logo">
@@ -136,47 +132,43 @@
 
         </section>
 
-        <div class="background">
 
-            <img src="alegre-chica-negocios-rizada-gafas.jpg">
-        </div>
-
-        <section id="interface"
-            class
-            style="margin-top: 50px; margin-left: 300px;
+        <section id="contenido">
+            <div class="title-p">
+                <div class="title-pchild">
+                    <div class="titulo">
+                        <h2>Somos Common</h2>
+                    </div>
         
-        
-        ">
-
-            <div class="titulo">
-                <h2>Somos Common</h2>
+                    <div class="parrafo">
+                        <p>En Common Ms estamos deseando colaborar cotnigo. Puedes
+                            encontrarnos en cualquiera de nuestras oficinas o si lo
+                            prefieres envianos
+                            un email y contactaremos contigo lo antes posible
+                        </p>
+                    </div>
+                </div>
+                
             </div>
+            
 
-            <div class="parrafo">
-                <p>En Common Ms estamos deseando colaborar cotnigo. Puedes
-                    encontrarnos en cualquiera de nuestras oficinas o si lo
-                    prefieres envianos
-                    un email y contactaremos contigo lo antes posible
-                </p>
-            </div>
+            <div class="redes">
 
-            <div class="redes flexbox-container">
-
-                <div>
+                <div class="social-networks">
                     <img src="imagenes/whatsapp-icon.jpg" width="50px" height="50px">
                 </div>
 
-                <div>
+                <div class="social-networks">
                     <img src="imagenes/facebook-icon.jpg" width="50px" height="50px">
 
-                </div>
+                </div >
 
-                <div>
+                <div class="social-networks">
                     <img src="imagenes/instagram-icon.jpg" width="50px"
                     height="50px">
                 </div>
 
-                <div>
+                <div class="social-networks">
                     <img src="imagenes/youtube-icon.jpg" width="50px" height="50px">
 
                 </div>
@@ -184,11 +176,11 @@
 
             </div>
 
-            <div class="flexbox-container" style="margin-left: 30%; margin-bottom: 20px;">
-                <div>
+            <div class="menu-sup-father">
+                <div class="menu-support">
                     <p>Menu para crear Soporte</p>
 
-                    <form>
+                    <form class="formulario-soporte">
                         <br>
 
                         <div>

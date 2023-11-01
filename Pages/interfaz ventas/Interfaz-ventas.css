@@ -66,6 +66,9 @@ padding:0;
 margin-bottom: 6px;
 
 }
+.container-nav-table {
+    min-width: 629px;
+}
 
 
 #menu .items  {
@@ -483,17 +486,15 @@ tbody tr td{
 
 @media (max-width:769px){
     #menu {
-        
-        width: 230px;
+        display: flex;
         position: fixed;
-        left: -230px;
-       
-       
+        height: 100%;
+       display: none;
     }
    
     /*for functional menu-btn*/
     #menu.active{
-        left: 0;
+        display: none;
     }
 
     #menu-btn{
@@ -519,8 +520,7 @@ tbody tr td{
     }
    
     #interface .navigation {
-     width: 100%;
- 
+     min-width: 100%;
     }
 
     .values {

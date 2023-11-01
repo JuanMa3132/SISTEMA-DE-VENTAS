@@ -22,32 +22,15 @@
 
         <!--Script cdn-->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        
 
     </head>
 
-    <style>
-           .background{
-            position: fixed;
-            margin-left: 250px;
-        }
 
-        .background img {
-            width: 110%;
-            opacity: 0.5;
-        }
-
-
-
-           
-
-        </style>
 
     <body>
 
         <section id="menu">
-
-           
-
             <div class="logo">
                 <img
                     src="imagenes/intento_2-transformed-removebg-preview (1).png"
@@ -57,8 +40,8 @@
 
             <div class="items"> <!-- Nav links and icons-->
 
-                <li><i class='bx bxs-dashboard'></i><a href="../Dashboard/index.html">
-                        Dashboard</a></li>
+                <a class="nav-styles"href="../Dashboard/index.html"><li><i class='bx bxs-dashboard'></i>
+                        Dashboard</li></a>
                 <li><i class="fa-solid fa-sack-dollar"></i> <a
                         href="../interfaz ventas/Interfaz-ventas.html"> Ventas</a></li>
                 <li><i class="fa-solid fa-hand-holding-dollar"></i> <a href="#">
@@ -93,99 +76,79 @@
 
         </section>
 
-        <div class="background">
-
-            <img src="imagenes/proveedores.jpg">
+        <div class="ham">
+            <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+                </svg>
         </div>
 
-        <section id="interface"
-            class
-            style="margin-top: 50px; margin-left: 300px;
-        
-        
-        ">
-            <h2>Proveedores</h2>
-
-            <p>Menu para crear proveedores</p>
-
-            <form>
-                <br>
-
-                <div>
-                    <label>Nombres</label>
-                    <input type="text">
+        <section id="interface">
+            <div class="formAndTitle-provedores">
+               <div class="form-proveedores-father">
+                <div class="title-interface">
+                    <h2>Proveedores</h2>
+    
+                    <p>Menu para crear proveedores</p>
                 </div>
-                <br>
-
-                <div>
-
-                    <label>Apellidos</label>
-                    <input type="text">
-
+            <div class="form-proveedores">
+                <form>
+                    <br>
+    
+                    <div>
+                        <label>Nombres</label>
+                        <input type="text">
+                    </div>
+                    <br>
+    
+                    <div>
+    
+                        <label>Apellidos</label>
+                        <input type="text">
+    
+                    </div>
+                    <br>
+    
+                    <div>
+                        <label>Telefono</label>
+                        <input type="text">
+                    </div>
+    
+                    <br>
+    
+                    <div>
+    
+                        <label>Direcion</label>
+                        <input type="text">
+    
+                    </div>
+    
+                    <br>
+                    <div>
+    
+                        <button type="button">Crear proveedor</button>
+                    </div>
+    
+                </form>
+            
                 </div>
-                <br>
+            </div>
+               </div>
 
-                <div>
-                    <label>Telefono</label>
-                    <input type="text">
-                </div>
-
-                <br>
-
-                <div>
-
-                    <label>Direcion</label>
-                    <input type="text">
-
-                </div>
+            <div class="admin-section">
+                <h2 class="text-admin">Administrador Sistema</h2>
 
                 <br>
-                <div>
-
-                    <button type="button">Crear proveedor</button>
-                </div>
-
-            </form>
-
-            <div style="top: 5%; position: absolute; left: 50%;">
-                <h2 style="margin-left: 80px;">Administrador Sistema</h2>
-
-                <br>
-                <img src="logo-1.png" width="200px" height="200px"
-                    style="margin-left: 100px;">
-
+                <img class="admin-img"id="user-profile-img" src="logo-1.png">
+              
                 <p>En este apartado podras ver los proveedores que estan en el
                     sistema</p>
             </div>
+
 
         </section>
 
         <br>
         <br>
-
-        <div style="position: Fixed; top: 90%; left: 20%;">
-
-            <img src="imagenes/whatsapp-icon.jpg" width="50px" height="50px">
-
-        </div>
-
-        <div style="position: Fixed; top: 90%; left: 40%;">
-
-            <img src="imagenes/facebook-icon.jpg" width="50px" height="50px">
-
-        </div>
-
-        <div style="position: Fixed; top: 90%; left: 60%;">
-
-            <img src="imagenes/instagram-icon.jpg" width="50px" height="50px">
-
-        </div>
-
-        <div style="position: Fixed; top: 90%; left: 80%;">
-
-            <img src="imagenes/youtube-icon.jpg" width="50px" height="50px">
-
-        </div>
 
         <script src="script.js"></script>
     </body>
