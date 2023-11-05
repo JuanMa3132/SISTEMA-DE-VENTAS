@@ -110,13 +110,14 @@ margin-bottom: 6px;
    
 }
 
-
+.dashboard-link {
+    border-left: 4px solid var(--border-left-event-hover);
+}
 
 #menu .items li{       
     list-style: none;
     padding: 15px 0;
     transition:0.3 ease ;
-   
     
 }
 
@@ -452,6 +453,7 @@ color: rgb(1, 1, 1);
         width: 230px;
         position: fixed;
         left: -230px;
+        z-index: 999;
        
        
     }

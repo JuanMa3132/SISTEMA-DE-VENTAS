@@ -71,12 +71,12 @@ margin-bottom: 6px;
 #menu .items  {
 
     margin-top: 25px;
- 
-  
-   
 }
 
-
+.chart-stats_1{
+    width: 100%;
+    height: 100%;
+}
 
 #menu .items li{       
     list-style: none;
@@ -87,13 +87,11 @@ margin-bottom: 6px;
 }
 
 #menu .items .estadisticas_list i {
-    color: var(--text-icon-color-hover);
     transition: 0.3s ease;
     font-weight: bold;
     text-decoration: none;
 }
 #menu .items .estadisticas_list a {
-    color: var(--text-icon-color-hover);
     transition: 0.3s ease;
     font-weight: bold;
     text-decoration: none;
@@ -421,22 +419,31 @@ color: rgb(1, 1, 1);
 }
 
 /*responsive*/ /*Esto es reutilizable*/
-
-@media (max-width:769px){
+@media (max-width:1172px) {
+    stats {
+        width: 500px;
+        height: auto;
+    }
+}
+@media (max-width:934px){
     #menu {
         
         width: 230px;
         position: fixed;
         left: -230px;
-       
-       
+        z-index: 999;
     }
    
     /*for functional menu-btn*/
     #menu.active{
         left: 0;
     }
-
+    .container_position_stats {
+        padding: 4em;
+    }
+    .chart-stats_1, .chart-stats_2, .chart-stats_3 {
+        padding: 1em;
+    }
     #menu-btn{
         display: initial;
         /*for visible menu-btn in mobile screens*/
@@ -444,11 +451,27 @@ color: rgb(1, 1, 1);
     }
    
     #interface {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         margin-left: 0px;
         display: inline-block;
         transition: 0.3s ease;
         
+    }
+    .chart-stats_1 {
+        width: 0 auto;
+    }
+    .stats {
+        display: flex;
+        justify-content: center;
+        width: 365px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .stats2 {
+        display: flex;
+        flex-direction: column;
     }
 
     /*mobile*/
@@ -488,6 +511,10 @@ color: rgb(1, 1, 1);
         width: 100%;
         border-collapse: collapse;
     }
+    .container_position_stats {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -525,11 +552,7 @@ color: rgb(1, 1, 1);
 }
 
 /* stats styles */
-.stats {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
+
 .stats2 {
     display: flex;
     justify-content: center;
@@ -537,7 +560,6 @@ color: rgb(1, 1, 1);
 }
 
 .estadisticas_list {
-    background-color: #3a3880 ;
     cursor: pointer;
     border-left: 4px solid var(--border-left-event-hover);
 }
@@ -557,5 +579,6 @@ color: rgb(1, 1, 1);
 .container_position_stats {
     padding: 20px;
 }
+
 
     

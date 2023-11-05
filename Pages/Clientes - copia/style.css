@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -24,84 +24,38 @@
 
 body {
     width: 100%;
-    background: var(--Support-button);
+    background: gainsboro;
     position: relative;
     display: flex;
 }
 
 
 #menu{
-    background: var(--sidebar-color);
-    width: 250px;
-    height: 100%;
-    border-right: 2px solid grey;
+    background:var(--sidebar-color);
+    width:250px;
+    
+    height:100%;
+    border-right:  2px solid grey;
     position: fixed;
+    /* for sidebar*/
     top: 0;
     left: 0;
 }
-.flexbox-container{
-    width: 100%;
-    flex-grow: 0;
-    justify-content: center;
-}
-.redes {
-    display: flex;
-    margin: 0;
-    align-items: center;
-    justify-content: space-around;
-}
-.social-networks {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu-support {
-    background-color: white;
-    justify-content: center;
-    padding: 2em;
-    font-size: large;
-    width: 100%;
-    margin-right: 0;
-    margin: 0;
-    border-radius: 1em;
-}
-.title-p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-.title-pchild {
-    display: flex;
-    padding: 2em;
-    flex-flow: column nowrap;
-    gap: 1em;
-}
-.flexbox-container > div:first-child {
-    width: 100%;
-    margin-right: 0;
-    text-align: center;
-}
-.menu-sup-father {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    padding: 50px;
+.ventas_link {
+    transition: 0.3s ease;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #menu .logo  {
     display: flex;
     align-items: center;
     color:rgb(139, 148, 167);
-    padding: 5px 0 0 10px;
+    padding: 10px 0 0 10px;
     border-bottom: 1px solid grey;
     font-weight: 600;
 
-}
-#menu .logo h2 {
-    font-size: 1.7em;
 }
 /*degrado de texto*/
 #menu .logo span{
@@ -110,12 +64,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.provedores-contenido {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    box-sizing: border-box;
-}
+
 #menu .logo img{
 
 width: 40px;
@@ -127,13 +76,21 @@ margin-bottom: 6px;
 
 
 #menu .items  {
-    margin-top: 25px; 
+
+    margin-top: 25px;
+ 
+  
+   
 }
-#menu .items li{   
-        
+
+
+
+#menu .items li{       
     list-style: none;
     padding: 15px 0;
-    transition:0.3 ease ;   
+    transition:0.3 ease ;
+   
+    
 }
 
 #menu .items li i{
@@ -213,55 +170,13 @@ border-left: 4px solid var(--border-left-event-hover);
 /*interface section profile, bell and more*/
 
 
-#contenido{
+#interface{
     width: calc(100% - 250px);
-    margin-left: 250px;
-    position: relative;
-    min-width: 884px;
-}
-#interface {
-    width: calc(100% - 250px);
-    margin-left: 250px;
-    position: relative;
-}
-.admin-section {
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    outline: 2px solid black;
-    background-color: white;
-    border-radius: 1em;
-}
-.admin-section p {
-    padding: 20px;
-}
-.form-proveedores-father {
-    padding: 2em;
-    border-radius: 1em;
-    background-color: white;
-}
-.form-proveedores-father input {
-    height: 3em;
-}
-.admin-img {
-    border-radius: 50%;
-    width: 40%;
-    height: 50%;
-    margin: 0 auto;
+    /* complement to fix te sidebar*/
+  margin-left: 250px;
+  position: relative;
 }
 
-#contenido .navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background:rgb(255, 255, 255);
-    padding: 15px 30px;
-    border-bottom: 3px solid black;
-    /*fix nav bar top*/
-    position: relative;
-}
 #interface .navigation{
     display: flex;
     align-items: center;
@@ -270,45 +185,30 @@ border-left: 4px solid var(--border-left-event-hover);
     padding: 15px 30px;
     border-bottom: 3px solid black;
     /*fix nav bar top*/
-    position: relative;
+    position: fixed;
+    width: calc(100% - 250px);
 }
 
-#contenido .navigation .search{
-    border: 1px solid grey;
-    border-radius: 4px;
-
-}
 #interface .navigation .search{
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
     border: 1px solid grey;
     border-radius: 4px;
 
 }
 
-#contenido .navigation .search i {
-    margin-right: 0px;
-    padding: 2px;
-}
-#interface .navigation .search i {
-    margin-right: 0px;
-    padding: 2px;
+#interface .navigation .search i{
+    margin-right: 14px;
 }
 
-#contenido .navigation .search input{
-    border: none;
-    outline: none;
-    font-size: 14px;
-}
 #interface .navigation .search input{
     border: none;
     outline: none;
     font-size: 14px;
 }
-#contenido .navigation .profile{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+
 #interface .navigation .profile{
     display: flex;
     justify-content: flex-start;
@@ -316,30 +216,12 @@ border-left: 4px solid var(--border-left-event-hover);
 }
 
 
-#contenido .navigation .profile i{
-    margin-right: 20px;
-    font-size: 19px;
-    font-weight: 400;
-}
 #interface .navigation .profile i{
     margin-right: 20px;
     font-size: 19px;
     font-weight: 400;
 }
 
-#contenido .navigation .profile img{
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50%;
-
-}
-.ventas_link {
-    transition: 0.3s ease;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
 #interface .navigation .profile img{
     width: 30px;
     height: 30px;
@@ -358,24 +240,13 @@ border-left: 4px solid var(--border-left-event-hover);
 #menu-btn{
     display: none; /*for hiden menu-btn in computer screens*/
     color: #2a2727;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 20px;
+font-size: 16px;
+cursor: pointer;
+margin-right: 20px;
 }
-#menu .items li a{
-    transition: 0.3s ease;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    }
 
 
-.nav-styles {
-    color: white;
-    list-style: none;
-    font-family: "popins", sans-serif;
-    box-sizing: border-box;
-}
+
 
 /* Estilo del encabezado que informa en cual pagina se está. En
 este caso, Dashboard*/
@@ -537,95 +408,49 @@ color: rgb(1, 1, 1);
     font-size: 14px;
 
 }
-.ham {
-    display: none;
-}
-.container-flex {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-.container-flex > div img {
-    margin: 0;
-}
-.child-contenido {
-    outline: 1px solid black;
-}
-.container-flexbox-container {
-    padding: 2em;
-}
+
 /*responsive*/ /*Esto es reutilizable*/
+
 @media (max-width:769px){
-    .ham {
-        display: flex;
-        width: 30px;
-        height: 20px;
-        position: fixed;
-        left: 1em;
-        z-index: 998;
-        transition: all 1s ease-in-out;
-    }
-    
     #menu {
-    width: 239px;
-    position: fixed;
-    z-index: 999;
-    left: -239px; 
+        z-index: 999;
+        width: 230px;
+        position: fixed;
+        left: -230px;
+       
+       
     }
+   
     /*for functional menu-btn*/
     #menu.active{
         left: 0;
     }
+
     #menu-btn{
         display: initial;
-/*for visible menu-btn in mobile screens*/
-        }
-    #contenido {
-        overflow: scroll;
-        min-width: 854px;
-        margin-left: 0px;
-        display: inline-block;
-        transition: 0.1s ease-in-out;
+        /*for visible menu-btn in mobile screens*/
+
     }
+   
     #interface {
         width: 100%;
-        overflow: scroll;
         margin-left: 0px;
         display: inline-block;
-        transition: 0.1s ease-in-out;
-    }
-    .child-contenido {
-        min-width: 100%;
-    }
-
-    .form-proveedores-father {
-        min-width: 250px;
+        transition: 0.3s ease;
+        
     }
 
     /*mobile*/
-    #menu.active~#contenido{
-        width: calc(100% -230px);
-        margin-left: 230px;
-        transition: 0.3s ease;
-    }
     #menu.active~#interface{
         width: calc(100% -230px);
         margin-left: 230px;
         transition: 0.3s ease;
+
     }
    
-    #contenido .navigation {
+    #interface .navigation {
      width: 100%;
  
-    }
-    #interface .navigation {
-        width: 100%;
-       }
-    .provedores-contenido {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 
     .values {
@@ -657,16 +482,10 @@ color: rgb(1, 1, 1);
 
 @media (max-width:477px) {
 
-    #contenido .navigation  {
-        padding: 15px;
-    }
     #interface .navigation  {
         padding: 15px;
     }
 
-    #contenido .navigation .search input{
-        width: 150px;
-    }
     #interface .navigation .search input{
         width: 150px;
     }
@@ -691,21 +510,41 @@ color: rgb(1, 1, 1);
         margin: 30px 15px 0 15px;
     }
     
-    .admin-img {
-        height: 20%;
-        width: 50%;
-    }
-    #contenido {
-        min-width: 100%;
-    }
-    .flexbox-container, .container-flex img, .container-flex {
-     display: flex;
-     margin: 4px;
-     justify-content: center;
-     align-items: center;
-     flex-flow: column ;
-    }
+    
+}.btn {
+  border: none; 
+  color: black; 
+  padding: 7px 26px; 
+  cursor: pointer; 
+  border-radius: 4px; 
 }
+.primary {background-color: white; border: 2px solid #007bff;} 
+.primary:hover {background: #0b7dda; color: white;}
+.secondary {background-color: white; border: 2px solid #e7e7e7;} 
+.secondary:hover {background: #ddd; color: white;}
+.success {background-color: white; border: 2px solid #04AA6D;} 
+.success:hover {background-color: #46a049; color: white;}
 
+ 
+/*casillas*/
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+ul.pagination li {display: inline;}
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 9px 18px;
+    text-decoration: none;
+}
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+ul.pagination li a.active:hover {background-color: #397f3b;}
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
     

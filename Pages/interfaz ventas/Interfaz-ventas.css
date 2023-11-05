@@ -34,7 +34,8 @@ body {
 #menu{
     background:var(--sidebar-color);
     width:250px;
-    height:100vh;
+    height: 100%;
+    position: fixed;
     border-right:  2px solid grey;
     /* for sidebar*/
     top: 0;
@@ -67,7 +68,8 @@ margin-bottom: 6px;
 
 }
 .container-nav-table {
-    min-width: 629px;
+    margin-left: 250px;
+    width: 100%;
 }
 
 
@@ -255,7 +257,7 @@ margin-right: 20px;
     padding: 10px 30px 0 30px;
     font-size: 24px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
     
 }
 
@@ -270,25 +272,44 @@ margin-right: 20px;
 
 }
 
-
-.interface2 {
+.section-container {
     display: flex;
-    min-width: 628px;
     flex-direction: column;
 }
+.precio-grande {
+    font-size: 40px; /* Tamaño de fuente más grande */
+    margin-top: 1em;
+    font-weight: bold; /* Texto en negrita (opcional) */
+    color: green; /* Color del texto (personalizable) */
+}
+.nombre-producto{
+    font-size: 40px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita (opcional) */
+    color: green; /* Color del texto (personalizable) */
+}
+.precios {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.precios-container {
+    padding: 2em;
+    background-color: #15fa00c2;
+}
 
-
-
+.child-contenido {
+    min-width: 100%;
+}
+.form-section {
+    padding: 1em;
+}
 .new-facture-btn{
-   margin-left: 30px;
-   margin-bottom: 15px;
     background: rgb(94, 61, 124);
     color: white;
     border: 0;
     border-radius: 6px;
     height: 40px;
     width: 110px;
-    margin-top: 20px;
     font-weight: bold;
     transition: 0.3s ease;
    
@@ -322,6 +343,9 @@ select{
     border: grey solid 0.10rem;
     border-radius: 6px;
     background: #dfc0ef96;/*antes era blanco*/
+}
+.titulo-menu {
+    font-size: 1.5em;
 }
 
 /*select ::-ms-expand{
@@ -474,27 +498,33 @@ tbody tr td{
   
   font-size: 30px;
 }
-
+  
 /*responsive*/ /*Esto es reutilizable*/
 
 .section-container {
     display: flex;
-    margin: 20px;
+    margin: 10px;
     justify-content: space-between;
     align-items: center;
 }
 
 @media (max-width:769px){
+   .precios {
+    display: flex;
+    gap:1em;
+    flex-direction: column;
+   }
+   .precios-container {
+    max-width: 429px;
+   }
     #menu {
-        display: flex;
-        position: fixed;
-        height: 100%;
-       display: none;
-    }
+        width: 250px;
+        left: -250px; 
+        }
    
     /*for functional menu-btn*/
     #menu.active{
-        display: none;
+        left: 0;
     }
 
     #menu-btn{
@@ -502,22 +532,19 @@ tbody tr td{
         /*for visible menu-btn in mobile screens*/
 
     }
-   
-    #interface {
-        width: 100%;
-        margin-left: 0px;
-        display: inline-block;
+    #menu.active~.container-nav-table{
+        width: calc(100% -230px);
+        margin-left: 250px;
         transition: 0.3s ease;
-        
+    }
+
+    .container-nav-table {
+        margin:0;
+        width: 100%;
     }
 
     /*mobile*/
-    #menu.active~#interface{
-        width: calc(100% -230px);
-        margin-left: 230px;
-        transition: 0.3s ease;
 
-    }
    
     #interface .navigation {
      min-width: 100%;
