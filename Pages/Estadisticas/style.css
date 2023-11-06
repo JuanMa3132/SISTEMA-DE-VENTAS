@@ -32,14 +32,16 @@ body {
 
 #menu{
     background:var(--sidebar-color);
-    width:250px;
+    width:265px;
     height:100%;
+    z-index: 999;
     border-right:  2px solid grey;
     position: fixed;
     /* for sidebar*/
     top: 0;
     left: 0;
 }
+
 
 #menu .logo  {
     display: flex;
@@ -48,7 +50,9 @@ body {
     padding: 10px 0 0 10px;
     border-bottom: 1px solid grey;
     font-weight: 600;
-
+}
+#menu .logo h2 {
+    font-size: 1.7em;
 }
 /*degrado de texto*/
 #menu .logo span{
